@@ -78,6 +78,8 @@ export default function Graph2D() {
     const g = instanceRef.current;
     if (!g || !prepared) return;
     const hl = prepared.highlight;
+    const illuminationChanged =
+      hl.dimUnfocusedNodes !== lastHighlightRef.current.dimUnfocusedNodes;
     if (
       hl.focusId === lastHighlightRef.current.focusId &&
       hl.neighborIds === lastHighlightRef.current.neighborIds &&
@@ -86,6 +88,7 @@ export default function Graph2D() {
       return;
     lastHighlightRef.current = hl;
     applyHighlight2D(g, hl);
+    if (illuminationChanged) g.refresh();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [prepared?.highlight]);
 

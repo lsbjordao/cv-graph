@@ -97,6 +97,8 @@ export default function Graph3D() {
     const g = instanceRef.current;
     if (!g || !prepared) return;
     const hl = prepared.highlight;
+    const illuminationChanged =
+      hl.dimUnfocusedNodes !== lastHighlightRef.current.dimUnfocusedNodes;
     // skip se o highlight não mudou (evita realloc de accessors)
     if (
       hl.focusId === lastHighlightRef.current.focusId &&
@@ -106,6 +108,7 @@ export default function Graph3D() {
       return;
     lastHighlightRef.current = hl;
     applyHighlight(g, hl);
+    if (illuminationChanged) g.refresh();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [prepared?.highlight]);
 
