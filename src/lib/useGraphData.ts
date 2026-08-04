@@ -1,18 +1,52 @@
 import { useMemo } from "react";
-import type { GraphData } from "../types";
+import type { GraphData, GraphEdge } from "../types";
 import { useGraphStore } from "../store";
-import { buildAdjacency } from "./neighbors";
 import { computeHighlight, type HighlightState } from "./highlight";
 
-// Prepara o subgrafo filtrado (por categoria visível) + adjacência + estado
-// de highlight. Compartilhado por Graph3D e Graph2D para que ambos reajam
-// igual ao hover/seleção.
+// Pré-computa a adjacência UMA VEZ sobre o grafo completo (não por filtro),
+// usando os `neighbors` que já vêm do dataset. O subgrafo filtrado só filtra
+// quais nós/arestas renderizar — a adjacência para highlight permanece global.
 export interface PreparedGraph {
   nodes: GraphData["nodes"];
   links: GraphData["edges"];
-  adjacency: ReturnType<typeof buildAdjacency>;
+  adjacency: ReturnType<typeof adjacencyFromEdges>;
   highlight: HighlightState;
   idsInScope: Set<string>;
+}
+
+// Mapa de adjacência derivado dos `neighbors` do dataset — construído uma vez.
+function adjacencyFromEdges(data: GraphData) {
+  const neighbors = new Map<string, Set<string>>();
+  const incident = new Map<string, Set<GraphEdge>>();
+  // constrói incident a partir das arestas (precisa para o edgeKey do highlight)
+  for (const e of data.edges) {
+    let ns = neighbors.get(e.source);
+    if (!ns) {
+      ns = new Set();
+      neighbors.set(e.source, ns);
+    }
+    ns.add(e.target);
+    let nt = neighbors.get(e.target);
+    if (!nt) {
+      nt = new Set();
+      neighbors.set(e.target, nt);
+    }
+    nt.add(e.source);
+
+    let is = incident.get(e.source);
+    if (!is) {
+      is = new Set();
+      incident.set(e.source, is);
+    }
+    is.add(e);
+    let it = incident.get(e.target);
+    if (!it) {
+      it = new Set();
+      incident.set(e.target, it);
+    }
+    it.add(e);
+  }
+  return { neighbors, incident };
 }
 
 export function usePreparedGraph(): PreparedGraph | null {
@@ -20,8 +54,12 @@ export function usePreparedGraph(): PreparedGraph | null {
   const visibleCategories = useGraphStore((s) => s.visibleCategories);
   const hoveredId = useGraphStore((s) => s.hoveredId);
   const selectedId = useGraphStore((s) => s.selectedId);
+  const dimUnfocusedNodes = useGraphStore((s) => s.dimUnfocusedNodes);
 
-  return useMemo(() => {
+  // adjacência global — memoizada independentemente dos filtros
+  const adjacency = useMemo(() => (data ? adjacencyFromEdges(data) : null), [data]);
+
+  const filtered = useMemo(() => {
     if (!data) return null;
 
     const idsInScope = new Set<string>();
@@ -32,19 +70,26 @@ export function usePreparedGraph(): PreparedGraph | null {
         idsInScope.add(n.id);
       }
     }
-    // arestas só se ambas as pontas estiverem no escopo
-    const links = data.edges.filter(
-      (e) => idsInScope.has(e.source) && idsInScope.has(e.target),
-    );
+    // force-graph troca source/target por objetos em runtime. Entregamos cópias
+    // para preservar o dataset canônico usado por filtros e pelo painel lateral.
+    const links = data.edges
+      .filter((e) => idsInScope.has(e.source) && idsInScope.has(e.target))
+      .map((e) => ({ ...e }));
 
-    const adjacency = buildAdjacency({ ...data, nodes, edges: links });
+    return { nodes, links, idsInScope };
+  }, [data, visibleCategories]);
+
+  return useMemo(() => {
+    if (!adjacency || !filtered) return null;
+
     const focusId = hoveredId ?? selectedId ?? null;
     const highlight = computeHighlight(
-      focusId && idsInScope.has(focusId) ? focusId : null,
+      focusId && filtered.idsInScope.has(focusId) ? focusId : null,
       adjacency.neighbors,
       adjacency.incident,
+      dimUnfocusedNodes,
     );
 
-    return { nodes, links, adjacency, highlight, idsInScope };
-  }, [data, visibleCategories, hoveredId, selectedId]);
+    return { ...filtered, adjacency, highlight };
+  }, [adjacency, filtered, hoveredId, selectedId, dimUnfocusedNodes]);
 }

@@ -15,6 +15,7 @@ interface GraphState {
   query: string;
   visibleCategories: Set<Category>;
   showLabels: boolean;
+  dimUnfocusedNodes: boolean;
   detailOpen: boolean;
 
   // actions
@@ -29,6 +30,7 @@ interface GraphState {
   setCategories: (cs: Set<Category>) => void;
   showAll: () => void;
   setShowLabels: (b: boolean) => void;
+  setDimUnfocusedNodes: (b: boolean) => void;
 }
 
 export const useGraphStore = create<GraphState>((set) => ({
@@ -44,6 +46,7 @@ export const useGraphStore = create<GraphState>((set) => ({
   // por padrão, todas as categorias visíveis
   visibleCategories: new Set<Category>(),
   showLabels: true,
+  dimUnfocusedNodes: true,
   detailOpen: false,
 
   setData: (d) =>
@@ -74,6 +77,7 @@ export const useGraphStore = create<GraphState>((set) => ({
         : new Set(),
     })),
   setShowLabels: (b) => set({ showLabels: b }),
+  setDimUnfocusedNodes: (b) => set({ dimUnfocusedNodes: b }),
 }));
 
 // Helper: lista de categorias presentes com contagem (para filtros/legenda).

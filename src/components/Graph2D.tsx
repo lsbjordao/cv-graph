@@ -1,47 +1,46 @@
 import { useEffect, useRef } from "react";
-import ForceGraphBase from "force-graph";
+import ForceGraph from "force-graph";
 import { useGraphStore } from "../store";
 import { usePreparedGraph } from "../lib/useGraphData";
 import {
   linkColorFor,
+  linkSourceColor,
   nodeColorFor,
+  NO_HIGHLIGHT,
   type HighlightState,
 } from "../lib/highlight";
 import { nodeRadius } from "../lib/neighbors";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-// Renderização 2D (force-graph). Mesma lógica de highlight do Graph3D —
-// ambos consomem usePreparedGraph, então hover/clique/filtros ficam idênticos.
-//
-// As libs force-graph (vasturiano) encadeiam setters com generics próprios;
-// aqui tratamos a instância como `any` e os callbacks recebem nós/arestas
-// "crus" que castamos para o nosso RNode/RLink em runtime. É o padrão
-// adotado pela comunidade para essas libs.
+// Em 2D os labels são desenhados no canvas (baratos), mas só mostramos para
+// nós grandes ou em zoom alto para manter a legibilidade.
+const LABEL_MIN_DEGREE_2D = 8;
+
 export default function Graph2D() {
   const containerRef = useRef<HTMLDivElement>(null);
-  // biome-ignore lint/suspicious/noExplicitAny: instância da lib force-graph
   const instanceRef = useRef<any>(null);
+  const lastHighlightRef = useRef<HighlightState>(NO_HIGHLIGHT);
 
   const prepared = usePreparedGraph();
   const showLabels = useGraphStore((s) => s.showLabels);
   const mode = useGraphStore((s) => s.mode);
 
-  // force-graph é exportado como classe no tipo, mas em runtime é uma factory
-  // function `ForceGraph()(element)`. Fazemos o cast no ponto de uso.
-  const ForceGraph = ForceGraphBase as unknown as () => (el: HTMLElement) => any;
+  const ForceGraphFn = ForceGraph as unknown as () => (el: HTMLElement) => any;
 
   useEffect(() => {
     if (!containerRef.current) return;
     const el = containerRef.current;
 
-    const Graph = ForceGraph()(el)
+    const Graph = ForceGraphFn()(el)
       .backgroundColor("#070b14")
-      .warmupTicks(60)
-      .cooldownTicks(120)
-      .d3VelocityDecay(0.3)
+      .warmupTicks(40)
+      .cooldownTicks(80)
+      .d3AlphaDecay(0.04)
+      .d3VelocityDecay(0.4)
       .linkDirectionalParticles(0)
-      .linkDirectionalParticleSpeed(0.004)
+      .nodeLabel((node: any) => node.label)
+      .linkColor(() => "rgba(120,140,170,0.15)")
       .onNodeHover((node: any) => {
         useGraphStore.getState().hover(node ? node.id : null);
         el.style.cursor = node ? "pointer" : "grab";
@@ -72,16 +71,32 @@ export default function Graph2D() {
     const g = instanceRef.current;
     if (!g || !prepared) return;
     g.graphData({ nodes: prepared.nodes, links: prepared.links });
-    refreshColors(g, prepared.highlight, showLabels);
+    applyHighlight2D(g, prepared.highlight);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [prepared?.nodes, prepared?.links]);
 
   useEffect(() => {
     const g = instanceRef.current;
     if (!g || !prepared) return;
-    refreshColors(g, prepared.highlight, showLabels);
+    const hl = prepared.highlight;
+    if (
+      hl.focusId === lastHighlightRef.current.focusId &&
+      hl.neighborIds === lastHighlightRef.current.neighborIds &&
+      hl.dimUnfocusedNodes === lastHighlightRef.current.dimUnfocusedNodes
+    )
+      return;
+    lastHighlightRef.current = hl;
+    applyHighlight2D(g, hl);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [prepared?.highlight, showLabels]);
+  }, [prepared?.highlight]);
+
+  // toggle de labels não depende do highlight
+  useEffect(() => {
+    const g = instanceRef.current;
+    if (!g || !prepared) return;
+    applyHighlight2D(g, prepared.highlight);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showLabels]);
 
   if (mode !== "2d") return null;
 
@@ -94,30 +109,58 @@ export default function Graph2D() {
   );
 }
 
-function refreshColors(g: any, hl: HighlightState, showLabels: boolean): void {
+function applyHighlight2D(g: any, hl: HighlightState): void {
+  const showLabels = useGraphStore.getState().showLabels;
   g.nodeColor((node: any) => nodeColorFor(node, hl))
     .nodeRelSize(1)
     .nodeVal((node: any) => nodeRadius(node.degree ?? 0))
-    .nodeLabel((node: any) =>
-      `<div class="fg-tip"><span class="fg-tip__label">${escapeHtml(node.label)}</span>` +
-      (node.snippet ? `<span class="fg-tip__snippet">${escapeHtml(node.snippet)}</span>` : "") +
-      `</div>`,
-    )
     .linkColor((link: any) => linkColorFor(link, hl))
-    .linkDirectionalParticleWidth((link: any) => particleWidth(link, hl))
-    .linkDirectionalParticles(2)
+    .linkDirectionalParticles((link: any) => isActiveLink(link, hl) ? 4 : 0)
+    .linkDirectionalParticleCanvasObject(drawGlowParticle)
+    .linkDirectionalParticleSpeed(0.008)
+    .nodePointerAreaPaint((node: any, color: string, ctx: CanvasRenderingContext2D) => {
+      ctx.beginPath();
+      ctx.arc(node.x ?? 0, node.y ?? 0, Math.max(5, nodeRadius(node.degree ?? 0)), 0, 2 * Math.PI);
+      ctx.fillStyle = color;
+      ctx.fill();
+    })
     .nodeCanvasObject((node: any, ctx: CanvasRenderingContext2D, globalScale: number) =>
       drawNode(ctx, node, hl, globalScale, showLabels),
     );
 }
 
-function particleWidth(link: any, hl: HighlightState): number {
+function isActiveLink(link: any, hl: HighlightState): boolean {
+  if (!hl.focusId) return false;
   const sid = typeof link.source === "string" ? link.source : link.source.id;
   const tid = typeof link.target === "string" ? link.target : link.target.id;
-  const active =
+  return (
     hl.activeEdgeKeys.has(`${sid}|${tid}|${link.label}`) ||
-    hl.activeEdgeKeys.has(`${tid}|${sid}|${link.label}`);
-  return active ? 2 : 0;
+    hl.activeEdgeKeys.has(`${tid}|${sid}|${link.label}`)
+  );
+}
+
+function drawGlowParticle(
+  x: number,
+  y: number,
+  link: any,
+  ctx: CanvasRenderingContext2D,
+  globalScale: number,
+): void {
+  const color = linkSourceColor(link);
+  const haloRadius = 8 / globalScale;
+  const coreRadius = 2.4 / globalScale;
+  const glow = ctx.createRadialGradient(x, y, 0, x, y, haloRadius);
+  glow.addColorStop(0, `${color}ff`);
+  glow.addColorStop(coreRadius / haloRadius, `${color}e6`);
+  glow.addColorStop(0.55, `${color}66`);
+  glow.addColorStop(1, `${color}00`);
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.arc(x, y, haloRadius, 0, 2 * Math.PI);
+  ctx.fillStyle = glow;
+  ctx.fill();
+  ctx.restore();
 }
 
 function drawNode(
@@ -134,7 +177,7 @@ function drawNode(
 
   if (hl.focusId && hl.neighborIds.has(node.id)) {
     ctx.beginPath();
-    ctx.arc(x, y, r + 3, 0, 2 * Math.PI);
+    ctx.arc(x, y, r + 2.5, 0, 2 * Math.PI);
     ctx.fillStyle = color + "33";
     ctx.fill();
   }
@@ -145,20 +188,15 @@ function drawNode(
   ctx.fill();
 
   const showThisLabel =
-    showLabels && (scale > 2.2 || node.degree >= 6 || node.id === hl.focusId);
+    showLabels &&
+    (scale > 2.5 || node.degree >= LABEL_MIN_DEGREE_2D || node.id === hl.focusId);
   if (showThisLabel) {
-    ctx.font = `${Math.max(8, 11 / scale)}px Inter, sans-serif`;
+    ctx.font = `${Math.max(8, 10 / scale)}px Inter, sans-serif`;
     ctx.textAlign = "center";
     ctx.textBaseline = "top";
-    ctx.fillStyle = "rgba(226,232,240,0.85)";
-    ctx.fillText(truncate(node.label, 26), x, y + r + 2);
+    ctx.fillStyle = "rgba(203,213,225,0.85)";
+    ctx.fillText(truncate(node.label, 24), x, y + r + 2);
   }
-}
-
-function escapeHtml(s: string): string {
-  return (s ?? "").replace(/[&<>"']/g, (c: string) =>
-    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c] ?? c,
-  );
 }
 
 function truncate(s: string, n: number): string {

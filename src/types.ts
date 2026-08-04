@@ -13,6 +13,7 @@ export type Category =
   | "datasource"
   | "area"
   | "publication"
+  | "assessment"
   | "teaching"
   | "academic"
   | "event"
@@ -32,6 +33,7 @@ export interface GraphNode {
   doi: string | null;
   image: string | null;
   degree: number;
+  neighbors: string[];
 }
 
 export interface GraphEdge {

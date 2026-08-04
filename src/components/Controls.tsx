@@ -6,6 +6,8 @@ export default function Controls() {
   const setMode = useGraphStore((s) => s.setMode);
   const showLabels = useGraphStore((s) => s.showLabels);
   const setShowLabels = useGraphStore((s) => s.setShowLabels);
+  const dimUnfocusedNodes = useGraphStore((s) => s.dimUnfocusedNodes);
+  const setDimUnfocusedNodes = useGraphStore((s) => s.setDimUnfocusedNodes);
 
   return (
     <div className="pointer-events-auto absolute bottom-4 left-1/2 z-20 flex -translate-x-1/2 items-center gap-1 rounded-full border border-white/10 bg-ink-900/70 px-1.5 py-1.5 shadow-2xl backdrop-blur-md sm:bottom-6">
@@ -44,6 +46,21 @@ export default function Controls() {
         title="Mostrar rótulos"
       >
         Rótulos
+      </button>
+
+      <div className="mx-1 h-5 w-px bg-white/10" />
+
+      <button
+        onClick={() => setDimUnfocusedNodes(!dimUnfocusedNodes)}
+        aria-pressed={!dimUnfocusedNodes}
+        className={`rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
+          !dimUnfocusedNodes
+            ? "bg-amber-400/20 text-amber-200 hover:text-amber-100"
+            : "text-slate-500 hover:text-slate-300"
+        }`}
+        title={dimUnfocusedNodes ? "Acender todos os nós" : "Obscurecer nós fora do destaque"}
+      >
+        Todos acesos
       </button>
     </div>
   );
