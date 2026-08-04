@@ -3,15 +3,15 @@ import ThreeForceGraphBase from "3d-force-graph";
 import SpriteText from "three-spritetext";
 import {
   AdditiveBlending,
+  Color,
   Mesh,
-  MeshBasicMaterial,
+  ShaderMaterial,
   SphereGeometry,
 } from "three";
 import { useGraphStore } from "../store";
 import { usePreparedGraph } from "../lib/useGraphData";
 import {
   linkColorFor,
-  linkSourceColor,
   nodeColorFor,
   NO_HIGHLIGHT,
   type HighlightState,
@@ -67,9 +67,15 @@ export default function Graph3D() {
         useGraphStore.getState().hover(null);
       });
 
+    const controls = Graph.controls();
+    const resizeParticles = () => updateParticleScale(Graph.camera(), controls);
+    controls.addEventListener("change", resizeParticles);
+    resizeParticles();
+
     instanceRef.current = Graph;
 
     return () => {
+      controls.removeEventListener("change", resizeParticles);
       Graph._destructor();
       el.innerHTML = "";
       instanceRef.current = null;
@@ -122,10 +128,7 @@ function applyHighlight(g: any, hl: HighlightState): void {
     .linkDirectionalParticles((link: any) =>
       isActiveLink(link, hl.focusId) ? 4 : 0,
     )
-    .linkDirectionalParticleWidth((link: any) =>
-      particleWidth(link, hl.focusId),
-    )
-    .linkDirectionalParticleThreeObject((link: any) => glowParticle(link))
+    .linkDirectionalParticleThreeObject((link: any) => glowParticle(link, hl))
     .linkDirectionalParticleSpeed(0.008)
     .nodeThreeObjectExtend(true)
     .nodeThreeObject((node: any) => {
@@ -142,29 +145,58 @@ function applyHighlight(g: any, hl: HighlightState): void {
     });
 }
 
-function particleWidth(link: any, focusId: string | null): number {
-  return isActiveLink(link, focusId) ? 2.4 : 0;
-}
-
 const glowParticles = new Map<string, Mesh>();
+const particleGeometry = new SphereGeometry(1, 8, 8);
+let particleScale = 1;
 
-function glowParticle(link: any): Mesh {
-  const color = linkSourceColor(link);
+function glowParticle(link: any, hl: HighlightState): Mesh {
+  const color = linkColorFor(link, hl);
   let particle = glowParticles.get(color);
   if (!particle) {
+    const opaqueColor = color.replace(
+      /^rgba\(([^,]+,[^,]+,[^,]+),[^)]+\)$/,
+      "rgb($1)",
+    );
     particle = new Mesh(
-      new SphereGeometry(2.3, 8, 8),
-      new MeshBasicMaterial({
-        color,
+      particleGeometry,
+      new ShaderMaterial({
+        uniforms: { glowColor: { value: new Color(opaqueColor) } },
         transparent: true,
-        opacity: 0.9,
         blending: AdditiveBlending,
         depthWrite: false,
+        vertexShader: `
+          varying float glow;
+          void main() {
+            vec4 viewPosition = modelViewMatrix * vec4(position, 1.0);
+            vec3 viewNormal = normalize(normalMatrix * normal);
+            glow = max(dot(viewNormal, normalize(-viewPosition.xyz)), 0.0);
+            gl_Position = projectionMatrix * viewPosition;
+          }
+        `,
+        fragmentShader: `
+          uniform vec3 glowColor;
+          varying float glow;
+          void main() {
+            float alpha = pow(glow, 2.2) * 0.72;
+            if (alpha < 0.015) discard;
+            gl_FragColor = vec4(glowColor, alpha);
+          }
+        `,
       }),
     );
     glowParticles.set(color, particle);
   }
   return particle;
+}
+
+function updateParticleScale(camera: any, controls: any): void {
+  const distance = camera.position.distanceTo(controls.target);
+  const nextScale = Math.min(
+    1.4,
+    Math.max(0.25, Math.pow(distance / 520, 1.25)),
+  );
+  particleGeometry.scale(nextScale / particleScale, nextScale / particleScale, nextScale / particleScale);
+  particleScale = nextScale;
 }
 
 function isActiveLink(link: any, focusId: string | null): boolean {

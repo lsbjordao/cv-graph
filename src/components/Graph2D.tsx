@@ -4,7 +4,6 @@ import { useGraphStore } from "../store";
 import { usePreparedGraph } from "../lib/useGraphData";
 import {
   linkColorFor,
-  linkSourceColor,
   nodeColorFor,
   NO_HIGHLIGHT,
   type HighlightState,
@@ -116,7 +115,10 @@ function applyHighlight2D(g: any, hl: HighlightState): void {
     .nodeVal((node: any) => nodeRadius(node.degree ?? 0))
     .linkColor((link: any) => linkColorFor(link, hl))
     .linkDirectionalParticles((link: any) => isActiveLink(link, hl) ? 4 : 0)
-    .linkDirectionalParticleCanvasObject(drawGlowParticle)
+    .linkDirectionalParticleCanvasObject(
+      (x: number, y: number, link: any, ctx: CanvasRenderingContext2D, globalScale: number) =>
+        drawGlowParticle(x, y, link, ctx, globalScale, hl),
+    )
     .linkDirectionalParticleSpeed(0.008)
     .nodePointerAreaPaint((node: any, color: string, ctx: CanvasRenderingContext2D) => {
       ctx.beginPath();
@@ -145,15 +147,17 @@ function drawGlowParticle(
   link: any,
   ctx: CanvasRenderingContext2D,
   globalScale: number,
+  hl: HighlightState,
 ): void {
-  const color = linkSourceColor(link);
-  const haloRadius = 8 / globalScale;
-  const coreRadius = 2.4 / globalScale;
+  const color = linkColorFor(link, hl);
+  const screenRadius = Math.min(5.5, Math.max(2.8, 4 / Math.sqrt(globalScale)));
+  const haloRadius = screenRadius / globalScale;
+  const coreRadius = haloRadius * 0.24;
   const glow = ctx.createRadialGradient(x, y, 0, x, y, haloRadius);
-  glow.addColorStop(0, `${color}ff`);
-  glow.addColorStop(coreRadius / haloRadius, `${color}e6`);
-  glow.addColorStop(0.55, `${color}66`);
-  glow.addColorStop(1, `${color}00`);
+  glow.addColorStop(0, withAlpha(color, 1));
+  glow.addColorStop(coreRadius / haloRadius, withAlpha(color, 0.85));
+  glow.addColorStop(0.58, withAlpha(color, 0.3));
+  glow.addColorStop(1, withAlpha(color, 0));
 
   ctx.save();
   ctx.beginPath();
@@ -161,6 +165,13 @@ function drawGlowParticle(
   ctx.fillStyle = glow;
   ctx.fill();
   ctx.restore();
+}
+
+function withAlpha(color: string, alpha: number): string {
+  return color.replace(/rgba?\(([^)]+?)(?:,\s*[\d.]+)?\)$/, (_match, channels) => {
+    const rgb = String(channels).split(",").slice(0, 3).join(",");
+    return `rgba(${rgb},${alpha})`;
+  });
 }
 
 function drawNode(
