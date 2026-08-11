@@ -3,8 +3,8 @@
     "base": "https://lsbjordao.github.io/cv/",
     "person": "https://lsbjordao.github.io/cv/person/lucas-sa-barreto-jordao",
     "stats": {
-      "nodes": 1067,
-      "edges": 3794
+      "nodes": 1074,
+      "edges": 3849
     },
     "generatedBy": "semantics/scripts/export_graph.py"
   },
@@ -690,7 +690,7 @@
       "url": null,
       "doi": null,
       "image": "images/projetos/avalia-cncflora.webp",
-      "degree": 36,
+      "degree": 40,
       "neighbors": [
         "https://lsbjordao.github.io/cv/datasource/mapbiomas-uso-e-cobertura-do-solo",
         "https://lsbjordao.github.io/cv/org/cncflora",
@@ -701,9 +701,12 @@
         "https://lsbjordao.github.io/cv/project/resgate-dados-legados-proflora",
         "https://lsbjordao.github.io/cv/skill/apis-rest-e-graphql",
         "https://lsbjordao.github.io/cv/skill/aplicacoes-web-de-ponta-a-ponta",
+        "https://lsbjordao.github.io/cv/skill/arquitetura-de-solucoes",
         "https://lsbjordao.github.io/cv/skill/catalogo-de-servicos",
         "https://lsbjordao.github.io/cv/skill/ci-cd",
         "https://lsbjordao.github.io/cv/skill/consultas-e-bancos-espaciais",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
         "https://lsbjordao.github.io/cv/skill/engenharia-e-elicitacao-de-requisitos",
         "https://lsbjordao.github.io/cv/skill/integracao-de-fontes-heterogeneas",
         "https://lsbjordao.github.io/cv/skill/mensageria-e-filas-assincronas",
@@ -712,6 +715,7 @@
         "https://lsbjordao.github.io/cv/skill/modelagem-relacional",
         "https://lsbjordao.github.io/cv/skill/operacionalizacao-da-lista-vermelha-da-iucn",
         "https://lsbjordao.github.io/cv/skill/orquestracao-de-pipelines",
+        "https://lsbjordao.github.io/cv/skill/transformacao-digital-orientada-a-ativos-duradouros",
         "https://lsbjordao.github.io/cv/teaching/treinamento-cncflora-risco-extincao",
         "https://lsbjordao.github.io/cv/technology/apache-airflow",
         "https://lsbjordao.github.io/cv/technology/backstage",
@@ -1062,7 +1066,7 @@
       "url": null,
       "doi": null,
       "image": "images/projetos/avalia-cncflora.webp",
-      "degree": 18,
+      "degree": 21,
       "neighbors": [
         "https://lsbjordao.github.io/cv/datasource/mapbiomas-alerta",
         "https://lsbjordao.github.io/cv/datasource/mapbiomas-fogo",
@@ -1070,7 +1074,10 @@
         "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
         "https://lsbjordao.github.io/cv/skill/apis-rest-e-graphql",
         "https://lsbjordao.github.io/cv/skill/aplicacoes-web-de-ponta-a-ponta",
+        "https://lsbjordao.github.io/cv/skill/arquitetura-de-solucoes",
         "https://lsbjordao.github.io/cv/skill/consultas-e-bancos-espaciais",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
         "https://lsbjordao.github.io/cv/skill/engenharia-e-elicitacao-de-requisitos",
         "https://lsbjordao.github.io/cv/skill/modelagem-relacional",
         "https://lsbjordao.github.io/cv/skill/operacionalizacao-da-lista-vermelha-da-iucn",
@@ -1164,13 +1171,15 @@
       "url": null,
       "doi": null,
       "image": "images/projetos/coac-app.webp",
-      "degree": 7,
+      "degree": 9,
       "neighbors": [
         "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
         "https://lsbjordao.github.io/cv/method/mensageria",
         "https://lsbjordao.github.io/cv/method/workflow",
+        "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
         "https://lsbjordao.github.io/cv/skill/automacao-de-planilhas-e-documentos",
         "https://lsbjordao.github.io/cv/skill/engenharia-e-elicitacao-de-requisitos",
+        "https://lsbjordao.github.io/cv/skill/product-discovery",
         "https://lsbjordao.github.io/cv/technology/google-apis",
         "https://lsbjordao.github.io/cv/technology/google-apps-script"
       ]
@@ -1507,7 +1516,7 @@
     },
     {
       "id": "https://lsbjordao.github.io/cv/skill/transformacao-digital-orientada-a-ativos-duradouros",
-      "label": "transformação digital orientada a ativos duradouros",
+      "label": "transformação digital",
       "primaryType": "cv:Skill",
       "category": "skill",
       "types": [
@@ -1520,9 +1529,12 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 1,
+      "degree": 5,
       "neighbors": [
-        "https://lsbjordao.github.io/cv/skill-group/aprendizagem-inovacao-transformacao"
+        "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
+        "https://lsbjordao.github.io/cv/skill-group/aprendizagem-inovacao-transformacao",
+        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas"
       ]
     },
     {
@@ -2050,7 +2062,7 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 24,
+      "degree": 26,
       "neighbors": [
         "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
         "https://lsbjordao.github.io/cv/project/avalia-cncflora",
@@ -2058,6 +2070,7 @@
         "https://lsbjordao.github.io/cv/project/type-taxon-script",
         "https://lsbjordao.github.io/cv/project/type-taxon-script-mimosa",
         "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/technical/npm-type-taxon-script",
         "https://lsbjordao.github.io/cv/technical/quarto-focus-mode",
         "https://lsbjordao.github.io/cv/technical/site-avaliacao-risco-extincao",
@@ -2093,9 +2106,10 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 3,
+      "degree": 5,
       "neighbors": [
         "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/technology/expo",
         "https://lsbjordao.github.io/cv/technology/react-native"
       ]
@@ -2115,11 +2129,12 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 8,
+      "degree": 10,
       "neighbors": [
         "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
         "https://lsbjordao.github.io/cv/project/avalia-cncflora",
         "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/technology/graphql",
         "https://lsbjordao.github.io/cv/technology/nestjs",
         "https://lsbjordao.github.io/cv/technology/node-js",
@@ -2142,12 +2157,13 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 12,
+      "degree": 14,
       "neighbors": [
         "https://lsbjordao.github.io/cv/project/quarto-cite-this",
         "https://lsbjordao.github.io/cv/project/quarto-focus-mode",
         "https://lsbjordao.github.io/cv/project/quarto-scientific-writing",
         "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/technical/quarto-cite-this",
         "https://lsbjordao.github.io/cv/technical/quarto-focus-mode",
         "https://lsbjordao.github.io/cv/technical/quarto-scientific-writing",
@@ -2173,9 +2189,10 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 4,
+      "degree": 6,
       "neighbors": [
         "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/technology/nestjs",
         "https://lsbjordao.github.io/cv/technology/postgresql",
         "https://lsbjordao.github.io/cv/technology/typescript"
@@ -2196,9 +2213,10 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 4,
+      "degree": 6,
       "neighbors": [
         "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/technology/javascript",
         "https://lsbjordao.github.io/cv/technology/node-js",
         "https://lsbjordao.github.io/cv/technology/typescript"
@@ -2219,9 +2237,10 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 3,
+      "degree": 5,
       "neighbors": [
         "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/technology/nestjs",
         "https://lsbjordao.github.io/cv/technology/node-js"
       ]
@@ -2241,9 +2260,10 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 3,
+      "degree": 5,
       "neighbors": [
         "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/technology/next-js",
         "https://lsbjordao.github.io/cv/technology/react"
       ]
@@ -4602,7 +4622,7 @@
     },
     {
       "id": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
-      "label": "Produto, processo e colaboração multidisciplinar",
+      "label": "Engenharia de soluções tecnológicas",
       "primaryType": "cv:SkillGroup",
       "category": "skill",
       "types": [
@@ -4617,14 +4637,190 @@
       "image": null,
       "degree": 8,
       "neighbors": [
-        "https://lsbjordao.github.io/cv/skill/colaboracao-com-pesquisadores-avaliadores-desenvolvedores-e-gestores",
+        "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
+        "https://lsbjordao.github.io/cv/skill/arquitetura-de-solucoes",
+        "https://lsbjordao.github.io/cv/skill/consultoria-em-tecnologia",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/skill/engenharia-e-elicitacao-de-requisitos",
-        "https://lsbjordao.github.io/cv/skill/kanban",
-        "https://lsbjordao.github.io/cv/skill/lean-inception",
-        "https://lsbjordao.github.io/cv/skill/product-backlog-building",
-        "https://lsbjordao.github.io/cv/skill/scrum",
+        "https://lsbjordao.github.io/cv/skill/product-discovery",
+        "https://lsbjordao.github.io/cv/skill/transformacao-digital-orientada-a-ativos-duradouros"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "engenharia de soluções tecnológicas",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Capacidade de compreender um domínio e seus problemas, conduzir a descoberta, traduzir necessidades em requisitos, dados e processos, definir a arquitetura e acompanhar a solução até um software implementável.",
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 18,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
+        "https://lsbjordao.github.io/cv/project/avalia-cncflora",
+        "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
+        "https://lsbjordao.github.io/cv/skill/arquitetura-de-solucoes",
+        "https://lsbjordao.github.io/cv/skill/consultoria-em-tecnologia",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/engenharia-e-elicitacao-de-requisitos",
+        "https://lsbjordao.github.io/cv/skill/product-discovery",
+        "https://lsbjordao.github.io/cv/skill/transformacao-digital-orientada-a-ativos-duradouros"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
+      "label": "análise de negócio",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": null,
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 8,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/project/painel-acompanhamento-avaliacoes",
+        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
         "https://lsbjordao.github.io/cv/skill/storytelling-de-dominio",
         "https://lsbjordao.github.io/cv/skill/traducao-de-necessidades-cientificas-em-produtos-de-dados"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/product-discovery",
+      "label": "descoberta de produto",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": null,
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 8,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/project/painel-acompanhamento-avaliacoes",
+        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+        "https://lsbjordao.github.io/cv/skill/lean-inception",
+        "https://lsbjordao.github.io/cv/skill/product-backlog-building"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/arquitetura-de-solucoes",
+      "label": "arquitetura de soluções",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": null,
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 5,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
+        "https://lsbjordao.github.io/cv/project/avalia-cncflora",
+        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/consultoria-em-tecnologia",
+      "label": "consultoria em tecnologia",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": null,
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 5,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+        "https://lsbjordao.github.io/cv/skill/colaboracao-com-pesquisadores-avaliadores-desenvolvedores-e-gestores",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software",
+      "label": "desenvolvimento ágil de software",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": null,
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 7,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+        "https://lsbjordao.github.io/cv/skill/kanban",
+        "https://lsbjordao.github.io/cv/skill/scrum"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "desenvolvimento full stack",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": null,
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 21,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
+        "https://lsbjordao.github.io/cv/project/avalia-cncflora",
+        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+        "https://lsbjordao.github.io/cv/skill/apis-rest-e-graphql",
+        "https://lsbjordao.github.io/cv/skill/aplicacoes-web-de-ponta-a-ponta",
+        "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+        "https://lsbjordao.github.io/cv/skill/componentizacao-de-interfaces",
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-de-aplicacoes-mobile",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+        "https://lsbjordao.github.io/cv/skill/modelagem-e-evolucao-de-esquemas",
+        "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
+        "https://lsbjordao.github.io/cv/skill/testes-automatizados"
       ]
     },
     {
@@ -4642,9 +4838,9 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 1,
+      "degree": 2,
       "neighbors": [
-        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao"
+        "https://lsbjordao.github.io/cv/skill/product-discovery"
       ]
     },
     {
@@ -4662,9 +4858,9 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 1,
+      "degree": 2,
       "neighbors": [
-        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao"
+        "https://lsbjordao.github.io/cv/skill/product-discovery"
       ]
     },
     {
@@ -4682,9 +4878,9 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 1,
+      "degree": 2,
       "neighbors": [
-        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao"
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software"
       ]
     },
     {
@@ -4702,14 +4898,14 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 1,
+      "degree": 2,
       "neighbors": [
-        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao"
+        "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software"
       ]
     },
     {
       "id": "https://lsbjordao.github.io/cv/skill/engenharia-e-elicitacao-de-requisitos",
-      "label": "engenharia e elicitação de requisitos",
+      "label": "engenharia de requisitos",
       "primaryType": "cv:Skill",
       "category": "skill",
       "types": [
@@ -4722,12 +4918,13 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 4,
+      "degree": 6,
       "neighbors": [
         "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
         "https://lsbjordao.github.io/cv/project/avalia-cncflora",
         "https://lsbjordao.github.io/cv/project/painel-acompanhamento-avaliacoes",
-        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao"
+        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas"
       ]
     },
     {
@@ -4745,9 +4942,9 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 1,
+      "degree": 2,
       "neighbors": [
-        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao"
+        "https://lsbjordao.github.io/cv/skill/analise-de-negocios"
       ]
     },
     {
@@ -4765,9 +4962,9 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 1,
+      "degree": 2,
       "neighbors": [
-        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao"
+        "https://lsbjordao.github.io/cv/skill/analise-de-negocios"
       ]
     },
     {
@@ -4785,9 +4982,9 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 1,
+      "degree": 2,
       "neighbors": [
-        "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao"
+        "https://lsbjordao.github.io/cv/skill/consultoria-em-tecnologia"
       ]
     },
     {
@@ -30108,6 +30305,30 @@
     },
     {
       "source": "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
+      "target": "https://lsbjordao.github.io/cv/skill/arquitetura-de-solucoes",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
+      "target": "https://lsbjordao.github.io/cv/skill/transformacao-digital-orientada-a-ativos-duradouros",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
       "target": "https://lsbjordao.github.io/cv/skill/engenharia-e-elicitacao-de-requisitos",
       "label": "skill",
       "kind": "skill"
@@ -30660,6 +30881,24 @@
     },
     {
       "source": "https://lsbjordao.github.io/cv/project/avalia-cncflora",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/avalia-cncflora",
+      "target": "https://lsbjordao.github.io/cv/skill/arquitetura-de-solucoes",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/avalia-cncflora",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/avalia-cncflora",
       "target": "https://lsbjordao.github.io/cv/technology/typescript",
       "label": "technology",
       "kind": "technology"
@@ -30847,6 +31086,18 @@
     {
       "source": "https://lsbjordao.github.io/cv/project/painel-acompanhamento-avaliacoes",
       "target": "https://lsbjordao.github.io/cv/skill/engenharia-e-elicitacao-de-requisitos",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/painel-acompanhamento-avaliacoes",
+      "target": "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/painel-acompanhamento-avaliacoes",
+      "target": "https://lsbjordao.github.io/cv/skill/product-discovery",
       "label": "skill",
       "kind": "skill"
     },
@@ -31215,6 +31466,12 @@
       "target": "https://lsbjordao.github.io/cv/skill/integracao-entre-dominio-ambiental-e-tecnologia",
       "label": "skill",
       "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/transformacao-digital-orientada-a-ativos-duradouros",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill/integracao-entre-dominio-ambiental-e-tecnologia",
@@ -31811,6 +32068,12 @@
       "kind": "technology"
     },
     {
+      "source": "https://lsbjordao.github.io/cv/skill/aplicacoes-web-de-ponta-a-ponta",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
       "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-de-aplicacoes-mobile",
       "target": "https://lsbjordao.github.io/cv/technology/react-native",
       "label": "technology",
@@ -31821,6 +32084,12 @@
       "target": "https://lsbjordao.github.io/cv/technology/expo",
       "label": "technology",
       "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-de-aplicacoes-mobile",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill/apis-rest-e-graphql",
@@ -31853,6 +32122,12 @@
       "kind": "technology"
     },
     {
+      "source": "https://lsbjordao.github.io/cv/skill/apis-rest-e-graphql",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
       "source": "https://lsbjordao.github.io/cv/skill/componentizacao-de-interfaces",
       "target": "https://lsbjordao.github.io/cv/technology/javascript",
       "label": "technology",
@@ -31883,6 +32158,12 @@
       "kind": "technology"
     },
     {
+      "source": "https://lsbjordao.github.io/cv/skill/componentizacao-de-interfaces",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
       "source": "https://lsbjordao.github.io/cv/skill/modelagem-e-evolucao-de-esquemas",
       "target": "https://lsbjordao.github.io/cv/technology/typescript",
       "label": "technology",
@@ -31899,6 +32180,12 @@
       "target": "https://lsbjordao.github.io/cv/technology/postgresql",
       "label": "technology",
       "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/modelagem-e-evolucao-de-esquemas",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill/testes-automatizados",
@@ -31919,6 +32206,12 @@
       "kind": "technology"
     },
     {
+      "source": "https://lsbjordao.github.io/cv/skill/testes-automatizados",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
       "source": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
       "target": "https://lsbjordao.github.io/cv/technology/node-js",
       "label": "technology",
@@ -31931,6 +32224,12 @@
       "kind": "technology"
     },
     {
+      "source": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
       "source": "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
       "target": "https://lsbjordao.github.io/cv/technology/react",
       "label": "technology",
@@ -31941,6 +32240,12 @@
       "target": "https://lsbjordao.github.io/cv/technology/next-js",
       "label": "technology",
       "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill-group/analise-geoespacial-conservacao",
@@ -32850,25 +33155,13 @@
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
-      "target": "https://lsbjordao.github.io/cv/skill/lean-inception",
+      "target": "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
       "label": "skill",
       "kind": "skill"
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
-      "target": "https://lsbjordao.github.io/cv/skill/product-backlog-building",
-      "label": "skill",
-      "kind": "skill"
-    },
-    {
-      "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
-      "target": "https://lsbjordao.github.io/cv/skill/scrum",
-      "label": "skill",
-      "kind": "skill"
-    },
-    {
-      "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
-      "target": "https://lsbjordao.github.io/cv/skill/kanban",
+      "target": "https://lsbjordao.github.io/cv/skill/product-discovery",
       "label": "skill",
       "kind": "skill"
     },
@@ -32880,21 +33173,255 @@
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+      "target": "https://lsbjordao.github.io/cv/skill/arquitetura-de-solucoes",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+      "target": "https://lsbjordao.github.io/cv/skill/transformacao-digital-orientada-a-ativos-duradouros",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+      "target": "https://lsbjordao.github.io/cv/skill/consultoria-em-tecnologia",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "target": "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "target": "https://lsbjordao.github.io/cv/skill/product-discovery",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-e-elicitacao-de-requisitos",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "target": "https://lsbjordao.github.io/cv/skill/arquitetura-de-solucoes",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "target": "https://lsbjordao.github.io/cv/skill/transformacao-digital-orientada-a-ativos-duradouros",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "target": "https://lsbjordao.github.io/cv/skill/consultoria-em-tecnologia",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
       "target": "https://lsbjordao.github.io/cv/skill/storytelling-de-dominio",
-      "label": "skill",
-      "kind": "skill"
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
     },
     {
-      "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+      "source": "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
       "target": "https://lsbjordao.github.io/cv/skill/traducao-de-necessidades-cientificas-em-produtos-de-dados",
-      "label": "skill",
-      "kind": "skill"
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
     },
     {
-      "source": "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+      "source": "https://lsbjordao.github.io/cv/skill/product-discovery",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/product-discovery",
+      "target": "https://lsbjordao.github.io/cv/skill/lean-inception",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/product-discovery",
+      "target": "https://lsbjordao.github.io/cv/skill/product-backlog-building",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/arquitetura-de-solucoes",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/consultoria-em-tecnologia",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/consultoria-em-tecnologia",
       "target": "https://lsbjordao.github.io/cv/skill/colaboracao-com-pesquisadores-avaliadores-desenvolvedores-e-gestores",
-      "label": "skill",
-      "kind": "skill"
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software",
+      "target": "https://lsbjordao.github.io/cv/skill/scrum",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software",
+      "target": "https://lsbjordao.github.io/cv/skill/kanban",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/aplicacoes-web-de-ponta-a-ponta",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-de-aplicacoes-mobile",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/apis-rest-e-graphql",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/componentizacao-de-interfaces",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/modelagem-e-evolucao-de-esquemas",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/testes-automatizados",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/lean-inception",
+      "target": "https://lsbjordao.github.io/cv/skill/product-discovery",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/product-backlog-building",
+      "target": "https://lsbjordao.github.io/cv/skill/product-discovery",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/scrum",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/kanban",
+      "target": "https://lsbjordao.github.io/cv/skill/desenvolvimento-agil-de-software",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-e-elicitacao-de-requisitos",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/storytelling-de-dominio",
+      "target": "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/traducao-de-necessidades-cientificas-em-produtos-de-dados",
+      "target": "https://lsbjordao.github.io/cv/skill/analise-de-negocios",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/colaboracao-com-pesquisadores-avaliadores-desenvolvedores-e-gestores",
+      "target": "https://lsbjordao.github.io/cv/skill/consultoria-em-tecnologia",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
     },
     {
       "source": "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks",
