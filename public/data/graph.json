@@ -3,8 +3,8 @@
     "base": "https://lsbjordao.github.io/cv/",
     "person": "https://lsbjordao.github.io/cv/person/lucas-sa-barreto-jordao",
     "stats": {
-      "nodes": 1073,
-      "edges": 3849
+      "nodes": 1088,
+      "edges": 3905
     },
     "generatedBy": "semantics/scripts/export_graph.py"
   },
@@ -1283,6 +1283,40 @@
       ]
     },
     {
+      "id": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "label": "LULC Habitat",
+      "primaryType": "cv:Project",
+      "category": "project",
+      "types": [
+        "cv:Project",
+        "vivo:Project",
+        "cerif:cfProject"
+      ],
+      "dates": {
+        "startDate": "2026-05-09"
+      },
+      "snippet": "Aplicação web colaborativa funcional para coleta de classes MapBiomas de uso e cobertura do solo por espécie. Está em stand-by para que sua próxima etapa seja desenvolvida junto aos colaboradores. Além dos fluxos de seg…",
+      "url": null,
+      "doi": null,
+      "image": "images/projetos/lulc-habitat-auth.webp",
+      "degree": 13,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/datasource/mapbiomas-uso-e-cobertura-do-solo",
+        "https://lsbjordao.github.io/cv/skill/aplicacoes-web-de-ponta-a-ponta",
+        "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+        "https://lsbjordao.github.io/cv/skill/email-transacional",
+        "https://lsbjordao.github.io/cv/skill/gerenciamento-de-sessoes",
+        "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+        "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+        "https://lsbjordao.github.io/cv/technology/javascript",
+        "https://lsbjordao.github.io/cv/technology/jwt",
+        "https://lsbjordao.github.io/cv/technology/postgresql",
+        "https://lsbjordao.github.io/cv/technology/resend",
+        "https://lsbjordao.github.io/cv/technology/smtp",
+        "https://lsbjordao.github.io/cv/technology/supabase-auth"
+      ]
+    },
+    {
       "id": "https://lsbjordao.github.io/cv/project/sdk-ffb",
       "label": "SDK e cronologia da Flora e Funga do Brasil",
       "primaryType": "cv:Project",
@@ -2025,26 +2059,36 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 18,
+      "degree": 28,
       "neighbors": [
+        "https://lsbjordao.github.io/cv/skill/animacao-web",
         "https://lsbjordao.github.io/cv/skill/apis-rest-e-graphql",
         "https://lsbjordao.github.io/cv/skill/aplicacoes-web-de-ponta-a-ponta",
-        "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
         "https://lsbjordao.github.io/cv/skill/componentizacao-de-interfaces",
         "https://lsbjordao.github.io/cv/skill/desenvolvimento-de-aplicacoes-mobile",
+        "https://lsbjordao.github.io/cv/skill/graficos-3d-interativos-no-navegador",
         "https://lsbjordao.github.io/cv/skill/modelagem-e-evolucao-de-esquemas",
         "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
+        "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
         "https://lsbjordao.github.io/cv/skill/testes-automatizados",
+        "https://lsbjordao.github.io/cv/technology/astro",
         "https://lsbjordao.github.io/cv/technology/expo",
+        "https://lsbjordao.github.io/cv/technology/gsap",
         "https://lsbjordao.github.io/cv/technology/javascript",
+        "https://lsbjordao.github.io/cv/technology/jwt",
         "https://lsbjordao.github.io/cv/technology/nestjs",
         "https://lsbjordao.github.io/cv/technology/next-js",
         "https://lsbjordao.github.io/cv/technology/node-js",
         "https://lsbjordao.github.io/cv/technology/react",
         "https://lsbjordao.github.io/cv/technology/react-native",
+        "https://lsbjordao.github.io/cv/technology/resend",
+        "https://lsbjordao.github.io/cv/technology/smtp",
+        "https://lsbjordao.github.io/cv/technology/supabase-auth",
         "https://lsbjordao.github.io/cv/technology/svelte",
+        "https://lsbjordao.github.io/cv/technology/three-js",
         "https://lsbjordao.github.io/cv/technology/typescript",
-        "https://lsbjordao.github.io/cv/technology/vite"
+        "https://lsbjordao.github.io/cv/technology/vite",
+        "https://lsbjordao.github.io/cv/technology/webgl"
       ]
     },
     {
@@ -2062,10 +2106,11 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 26,
+      "degree": 27,
       "neighbors": [
         "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
         "https://lsbjordao.github.io/cv/project/avalia-cncflora",
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
         "https://lsbjordao.github.io/cv/project/quarto-focus-mode",
         "https://lsbjordao.github.io/cv/project/type-taxon-script",
         "https://lsbjordao.github.io/cv/project/type-taxon-script-mimosa",
@@ -2223,8 +2268,8 @@
       ]
     },
     {
-      "id": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
-      "label": "autenticação, autorização e auditoria",
+      "id": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+      "label": "segurança de aplicações web",
       "primaryType": "cv:Skill",
       "category": "skill",
       "types": [
@@ -2233,16 +2278,114 @@
         "schema:DefinedTerm"
       ],
       "dates": null,
-      "snippet": null,
+      "snippet": "Desenvolvimento de aplicações web com controle seguro de identidade e acesso, reunindo autenticação e autorização, gerenciamento de sessão, recuperação de senha e comunicação transacional.",
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 12,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+        "https://lsbjordao.github.io/cv/skill/email-transacional",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
+        "https://lsbjordao.github.io/cv/skill/gerenciamento-de-sessoes",
+        "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+      "label": "autenticação e autorização",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Implementação de login, verificação de usuários, papéis e políticas de acesso, com trilhas de auditoria para ações sensíveis.",
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 7,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
+        "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+        "https://lsbjordao.github.io/cv/technology/jwt",
+        "https://lsbjordao.github.io/cv/technology/nestjs",
+        "https://lsbjordao.github.io/cv/technology/node-js",
+        "https://lsbjordao.github.io/cv/technology/supabase-auth"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/gerenciamento-de-sessoes",
+      "label": "gerenciamento de sessão",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Criação, renovação, expiração e revogação de sessões autenticadas, incluindo autenticação baseada em JWT.",
       "url": null,
       "doi": null,
       "image": null,
       "degree": 5,
       "neighbors": [
-        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
-        "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
-        "https://lsbjordao.github.io/cv/technology/nestjs",
-        "https://lsbjordao.github.io/cv/technology/node-js"
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
+        "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+        "https://lsbjordao.github.io/cv/technology/jwt",
+        "https://lsbjordao.github.io/cv/technology/supabase-auth"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+      "label": "recuperação de senha",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Implementação de fluxos seguros de redefinição de senha por e-mail, com redirecionamento autenticado e atualização de credenciais.",
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 6,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
+        "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+        "https://lsbjordao.github.io/cv/technology/resend",
+        "https://lsbjordao.github.io/cv/technology/smtp",
+        "https://lsbjordao.github.io/cv/technology/supabase-auth"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/email-transacional",
+      "label": "e-mail transacional",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Automação de mensagens acionadas por eventos de conta e acesso, com provedor transacional e entrega por SMTP.",
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 5,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
+        "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+        "https://lsbjordao.github.io/cv/technology/resend",
+        "https://lsbjordao.github.io/cv/technology/smtp"
       ]
     },
     {
@@ -2260,12 +2403,58 @@
       "url": null,
       "doi": null,
       "image": null,
+      "degree": 6,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
+        "https://lsbjordao.github.io/cv/technology/astro",
+        "https://lsbjordao.github.io/cv/technology/next-js",
+        "https://lsbjordao.github.io/cv/technology/react"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/animacao-web",
+      "label": "animação web",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": null,
+      "url": null,
+      "doi": null,
+      "image": null,
+      "degree": 4,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
+        "https://lsbjordao.github.io/cv/technology/gsap"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/skill/graficos-3d-interativos-no-navegador",
+      "label": "gráficos 3D interativos no navegador",
+      "primaryType": "cv:Skill",
+      "category": "skill",
+      "types": [
+        "cv:Skill",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": null,
+      "url": null,
+      "doi": null,
+      "image": null,
       "degree": 5,
       "neighbors": [
         "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
-        "https://lsbjordao.github.io/cv/technology/next-js",
-        "https://lsbjordao.github.io/cv/technology/react"
+        "https://lsbjordao.github.io/cv/technology/three-js",
+        "https://lsbjordao.github.io/cv/technology/webgl"
       ]
     },
     {
@@ -4807,19 +4996,21 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 21,
+      "degree": 25,
       "neighbors": [
         "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
         "https://lsbjordao.github.io/cv/project/avalia-cncflora",
         "https://lsbjordao.github.io/cv/skill-group/produto-processo-colaboracao",
+        "https://lsbjordao.github.io/cv/skill/animacao-web",
         "https://lsbjordao.github.io/cv/skill/apis-rest-e-graphql",
         "https://lsbjordao.github.io/cv/skill/aplicacoes-web-de-ponta-a-ponta",
-        "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
         "https://lsbjordao.github.io/cv/skill/componentizacao-de-interfaces",
         "https://lsbjordao.github.io/cv/skill/desenvolvimento-de-aplicacoes-mobile",
         "https://lsbjordao.github.io/cv/skill/engenharia-de-solucoes-tecnologicas",
+        "https://lsbjordao.github.io/cv/skill/graficos-3d-interativos-no-navegador",
         "https://lsbjordao.github.io/cv/skill/modelagem-e-evolucao-de-esquemas",
         "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
+        "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
         "https://lsbjordao.github.io/cv/skill/testes-automatizados"
       ]
     },
@@ -5253,10 +5444,12 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 17,
+      "degree": 21,
       "neighbors": [
+        "https://lsbjordao.github.io/cv/technology/astro",
         "https://lsbjordao.github.io/cv/technology/expo",
         "https://lsbjordao.github.io/cv/technology/graphql",
+        "https://lsbjordao.github.io/cv/technology/gsap",
         "https://lsbjordao.github.io/cv/technology/javascript",
         "https://lsbjordao.github.io/cv/technology/nestjs",
         "https://lsbjordao.github.io/cv/technology/next-js",
@@ -5270,8 +5463,10 @@
         "https://lsbjordao.github.io/cv/technology/rest",
         "https://lsbjordao.github.io/cv/technology/sql",
         "https://lsbjordao.github.io/cv/technology/svelte",
+        "https://lsbjordao.github.io/cv/technology/three-js",
         "https://lsbjordao.github.io/cv/technology/typescript",
-        "https://lsbjordao.github.io/cv/technology/vite"
+        "https://lsbjordao.github.io/cv/technology/vite",
+        "https://lsbjordao.github.io/cv/technology/webgl"
       ]
     },
     {
@@ -5338,7 +5533,7 @@
     },
     {
       "id": "https://lsbjordao.github.io/cv/technology-group/infraestrutura-cloud",
-      "label": "Infraestrutura e nuvem",
+      "label": "Infraestrutura, nuvem e acesso",
       "primaryType": "cv:TechnologyGroup",
       "category": "technology",
       "types": [
@@ -5351,7 +5546,7 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 10,
+      "degree": 14,
       "neighbors": [
         "https://lsbjordao.github.io/cv/technology/aws",
         "https://lsbjordao.github.io/cv/technology/backstage",
@@ -5361,8 +5556,12 @@
         "https://lsbjordao.github.io/cv/technology/git",
         "https://lsbjordao.github.io/cv/technology/gitlab-ci-cd",
         "https://lsbjordao.github.io/cv/technology/google-cloud",
+        "https://lsbjordao.github.io/cv/technology/jwt",
         "https://lsbjordao.github.io/cv/technology/linux",
-        "https://lsbjordao.github.io/cv/technology/microsoft-azure"
+        "https://lsbjordao.github.io/cv/technology/microsoft-azure",
+        "https://lsbjordao.github.io/cv/technology/resend",
+        "https://lsbjordao.github.io/cv/technology/smtp",
+        "https://lsbjordao.github.io/cv/technology/supabase-auth"
       ]
     },
     {
@@ -9317,6 +9516,28 @@
       ]
     },
     {
+      "id": "https://lsbjordao.github.io/cv/technology/astro",
+      "label": "Astro",
+      "primaryType": "cv:Technology",
+      "category": "technology",
+      "types": [
+        "cv:Technology",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Framework web para sites orientados a conteúdo, com renderização estática por padrão e ilhas de interatividade.",
+      "url": null,
+      "doi": null,
+      "image": "images/tech/astro.svg",
+      "degree": 3,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
+        "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks"
+      ]
+    },
+    {
       "id": "https://lsbjordao.github.io/cv/technology/autohotkey",
       "label": "AutoHotKey",
       "primaryType": "cv:Technology",
@@ -9791,6 +10012,28 @@
       ]
     },
     {
+      "id": "https://lsbjordao.github.io/cv/technology/gsap",
+      "label": "GSAP",
+      "primaryType": "cv:Technology",
+      "category": "technology",
+      "types": [
+        "cv:Technology",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Biblioteca JavaScript de animação de alto desempenho para interfaces e experiências interativas.",
+      "url": null,
+      "doi": null,
+      "image": "images/tech/greensock.svg",
+      "degree": 3,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/animacao-web",
+        "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks"
+      ]
+    },
+    {
       "id": "https://lsbjordao.github.io/cv/technology/javascript",
       "label": "JavaScript",
       "primaryType": "cv:Technology",
@@ -9805,8 +10048,9 @@
       "url": null,
       "doi": null,
       "image": "images/tech/javascript.svg",
-      "degree": 24,
+      "degree": 25,
       "neighbors": [
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
         "https://lsbjordao.github.io/cv/project/quarto-cite-this",
         "https://lsbjordao.github.io/cv/project/quarto-focus-mode",
         "https://lsbjordao.github.io/cv/project/quarto-scientific-writing",
@@ -10240,10 +10484,11 @@
       "url": null,
       "doi": null,
       "image": "images/tech/postgresql.svg",
-      "degree": 12,
+      "degree": 13,
       "neighbors": [
         "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
         "https://lsbjordao.github.io/cv/project/avalia-cncflora",
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
         "https://lsbjordao.github.io/cv/project/resgate-dados-legados-proflora",
         "https://lsbjordao.github.io/cv/skill-group/engenharia-dados",
         "https://lsbjordao.github.io/cv/skill-group/modelagem-dados-conhecimento",
@@ -10716,6 +10961,28 @@
       ]
     },
     {
+      "id": "https://lsbjordao.github.io/cv/technology/three-js",
+      "label": "Three.js",
+      "primaryType": "cv:Technology",
+      "category": "technology",
+      "types": [
+        "cv:Technology",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Biblioteca JavaScript para construção de gráficos 3D no navegador sobre WebGL.",
+      "url": null,
+      "doi": null,
+      "image": "images/tech/threedotjs.svg",
+      "degree": 3,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/graficos-3d-interativos-no-navegador",
+        "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks"
+      ]
+    },
+    {
       "id": "https://lsbjordao.github.io/cv/technology/trino",
       "label": "Trino",
       "primaryType": "cv:Technology",
@@ -10734,6 +11001,103 @@
       "neighbors": [
         "https://lsbjordao.github.io/cv/skill-group/engenharia-dados",
         "https://lsbjordao.github.io/cv/technology-group/dados-pipelines"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/technology/jwt",
+      "label": "JWT",
+      "primaryType": "cv:Technology",
+      "category": "technology",
+      "types": [
+        "cv:Technology",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "JSON Web Token, padrão usado para transmitir declarações assinadas em fluxos de autenticação e autorização.",
+      "url": null,
+      "doi": null,
+      "image": "images/tech/jsonwebtokens.svg",
+      "degree": 5,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+        "https://lsbjordao.github.io/cv/skill/gerenciamento-de-sessoes",
+        "https://lsbjordao.github.io/cv/technology-group/infraestrutura-cloud"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/technology/supabase-auth",
+      "label": "Supabase Auth",
+      "primaryType": "cv:Technology",
+      "category": "technology",
+      "types": [
+        "cv:Technology",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Serviço de identidade do Supabase usado para cadastro, login, verificação de usuários, sessões e recuperação de senha.",
+      "url": null,
+      "doi": null,
+      "image": "images/tech/supabase.svg",
+      "degree": 6,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+        "https://lsbjordao.github.io/cv/skill/gerenciamento-de-sessoes",
+        "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+        "https://lsbjordao.github.io/cv/technology-group/infraestrutura-cloud"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/technology/resend",
+      "label": "Resend",
+      "primaryType": "cv:Technology",
+      "category": "technology",
+      "types": [
+        "cv:Technology",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Plataforma para envio programático de e-mails transacionais.",
+      "url": null,
+      "doi": null,
+      "image": "images/tech/resend.svg",
+      "degree": 5,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/email-transacional",
+        "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+        "https://lsbjordao.github.io/cv/technology-group/infraestrutura-cloud"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/technology/smtp",
+      "label": "SMTP",
+      "primaryType": "cv:Technology",
+      "category": "technology",
+      "types": [
+        "cv:Technology",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "Protocolo de transporte de e-mail usado na entrega de mensagens transacionais.",
+      "url": null,
+      "doi": null,
+      "image": "images/tech/smtp.svg",
+      "degree": 5,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/email-transacional",
+        "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+        "https://lsbjordao.github.io/cv/technology-group/infraestrutura-cloud"
       ]
     },
     {
@@ -10816,6 +11180,28 @@
       "neighbors": [
         "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
         "https://lsbjordao.github.io/cv/skill/aplicacoes-web-de-ponta-a-ponta",
+        "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks"
+      ]
+    },
+    {
+      "id": "https://lsbjordao.github.io/cv/technology/webgl",
+      "label": "WebGL",
+      "primaryType": "cv:Technology",
+      "category": "technology",
+      "types": [
+        "cv:Technology",
+        "skos:Concept",
+        "schema:DefinedTerm"
+      ],
+      "dates": null,
+      "snippet": "API JavaScript para renderização 2D e 3D acelerada por GPU no navegador.",
+      "url": null,
+      "doi": null,
+      "image": "images/tech/webgl.svg",
+      "degree": 3,
+      "neighbors": [
+        "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+        "https://lsbjordao.github.io/cv/skill/graficos-3d-interativos-no-navegador",
         "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks"
       ]
     },
@@ -29609,13 +29995,14 @@
       "url": null,
       "doi": null,
       "image": null,
-      "degree": 13,
+      "degree": 14,
       "neighbors": [
         "https://lsbjordao.github.io/cv/employment/cncflora-analista-lista-vermelha",
         "https://lsbjordao.github.io/cv/employment/cncflora-analista-ti",
         "https://lsbjordao.github.io/cv/org/mapbiomas",
         "https://lsbjordao.github.io/cv/output/manuscrito-continuing-decline-legumes-2026",
         "https://lsbjordao.github.io/cv/project/avalia-cncflora",
+        "https://lsbjordao.github.io/cv/project/lulc-habitat",
         "https://lsbjordao.github.io/cv/project/metodo-criterio-b-iucn-mapbiomas",
         "https://lsbjordao.github.io/cv/skill-group/analise-geoespacial-conservacao",
         "https://lsbjordao.github.io/cv/skill/operacionalizacao-da-lista-vermelha-da-iucn",
@@ -31307,6 +31694,84 @@
       "kind": "related"
     },
     {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/skill/aplicacoes-web-de-ponta-a-ponta",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/skill/gerenciamento-de-sessoes",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/skill/email-transacional",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/technology/javascript",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/technology/postgresql",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/technology/jwt",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/technology/supabase-auth",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/technology/resend",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/technology/smtp",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/project/lulc-habitat",
+      "target": "https://lsbjordao.github.io/cv/datasource/mapbiomas-uso-e-cobertura-do-solo",
+      "label": "dataSource",
+      "kind": "datasource"
+    },
+    {
       "source": "https://lsbjordao.github.io/cv/project/sdk-ffb",
       "target": "https://lsbjordao.github.io/cv/skill/integracao-com-apis-rest-e-graphql",
       "label": "skill",
@@ -31932,13 +32397,25 @@
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
-      "target": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+      "target": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
       "label": "skill",
       "kind": "skill"
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
       "target": "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/animacao-web",
+      "label": "skill",
+      "kind": "skill"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/graficos-3d-interativos-no-navegador",
       "label": "skill",
       "kind": "skill"
     },
@@ -31999,6 +32476,54 @@
     {
       "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
       "target": "https://lsbjordao.github.io/cv/technology/vite",
+      "label": "tool",
+      "kind": "tool"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/technology/astro",
+      "label": "tool",
+      "kind": "tool"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/technology/three-js",
+      "label": "tool",
+      "kind": "tool"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/technology/gsap",
+      "label": "tool",
+      "kind": "tool"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/technology/webgl",
+      "label": "tool",
+      "kind": "tool"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/technology/jwt",
+      "label": "tool",
+      "kind": "tool"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/technology/supabase-auth",
+      "label": "tool",
+      "kind": "tool"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/technology/resend",
+      "label": "tool",
+      "kind": "tool"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill-group/desenvolvimento-full-stack",
+      "target": "https://lsbjordao.github.io/cv/technology/smtp",
       "label": "tool",
       "kind": "tool"
     },
@@ -32195,6 +32720,36 @@
       "kind": "hierarchy"
     },
     {
+      "source": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+      "target": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+      "target": "https://lsbjordao.github.io/cv/skill/gerenciamento-de-sessoes",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+      "target": "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+      "target": "https://lsbjordao.github.io/cv/skill/email-transacional",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
       "source": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
       "target": "https://lsbjordao.github.io/cv/technology/node-js",
       "label": "technology",
@@ -32208,7 +32763,79 @@
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
-      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
+      "target": "https://lsbjordao.github.io/cv/technology/jwt",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+      "target": "https://lsbjordao.github.io/cv/technology/supabase-auth",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+      "target": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/gerenciamento-de-sessoes",
+      "target": "https://lsbjordao.github.io/cv/technology/jwt",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/gerenciamento-de-sessoes",
+      "target": "https://lsbjordao.github.io/cv/technology/supabase-auth",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/gerenciamento-de-sessoes",
+      "target": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+      "target": "https://lsbjordao.github.io/cv/technology/supabase-auth",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+      "target": "https://lsbjordao.github.io/cv/technology/resend",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+      "target": "https://lsbjordao.github.io/cv/technology/smtp",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/recuperacao-de-senha",
+      "target": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/email-transacional",
+      "target": "https://lsbjordao.github.io/cv/technology/resend",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/email-transacional",
+      "target": "https://lsbjordao.github.io/cv/technology/smtp",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/email-transacional",
+      "target": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
       "label": "broaderSkill",
       "kind": "hierarchy"
     },
@@ -32226,6 +32853,42 @@
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
+      "target": "https://lsbjordao.github.io/cv/technology/astro",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/animacao-web",
+      "target": "https://lsbjordao.github.io/cv/technology/gsap",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/animacao-web",
+      "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
+      "label": "broaderSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/graficos-3d-interativos-no-navegador",
+      "target": "https://lsbjordao.github.io/cv/technology/three-js",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/graficos-3d-interativos-no-navegador",
+      "target": "https://lsbjordao.github.io/cv/technology/webgl",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/graficos-3d-interativos-no-navegador",
       "target": "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
       "label": "broaderSkill",
       "kind": "hierarchy"
@@ -33348,13 +34011,25 @@
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
-      "target": "https://lsbjordao.github.io/cv/skill/autenticacao-autorizacao-e-auditoria",
+      "target": "https://lsbjordao.github.io/cv/skill/seguranca-de-aplicacoes-web",
       "label": "narrowerSkill",
       "kind": "hierarchy"
     },
     {
       "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
       "target": "https://lsbjordao.github.io/cv/skill/renderizacao-estatica-ssr-e-desempenho",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/animacao-web",
+      "label": "narrowerSkill",
+      "kind": "hierarchy"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/skill/engenharia-de-software-full-stack",
+      "target": "https://lsbjordao.github.io/cv/skill/graficos-3d-interativos-no-navegador",
       "label": "narrowerSkill",
       "kind": "hierarchy"
     },
@@ -33505,6 +34180,30 @@
     {
       "source": "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks",
       "target": "https://lsbjordao.github.io/cv/technology/regex",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks",
+      "target": "https://lsbjordao.github.io/cv/technology/astro",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks",
+      "target": "https://lsbjordao.github.io/cv/technology/three-js",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks",
+      "target": "https://lsbjordao.github.io/cv/technology/gsap",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/technology-group/linguagens-frameworks",
+      "target": "https://lsbjordao.github.io/cv/technology/webgl",
       "label": "technology",
       "kind": "technology"
     },
@@ -33709,6 +34408,30 @@
     {
       "source": "https://lsbjordao.github.io/cv/technology-group/infraestrutura-cloud",
       "target": "https://lsbjordao.github.io/cv/technology/microsoft-azure",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/technology-group/infraestrutura-cloud",
+      "target": "https://lsbjordao.github.io/cv/technology/jwt",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/technology-group/infraestrutura-cloud",
+      "target": "https://lsbjordao.github.io/cv/technology/supabase-auth",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/technology-group/infraestrutura-cloud",
+      "target": "https://lsbjordao.github.io/cv/technology/resend",
+      "label": "technology",
+      "kind": "technology"
+    },
+    {
+      "source": "https://lsbjordao.github.io/cv/technology-group/infraestrutura-cloud",
+      "target": "https://lsbjordao.github.io/cv/technology/smtp",
       "label": "technology",
       "kind": "technology"
     },
